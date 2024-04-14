@@ -1,0 +1,11 @@
+<script>
+  function download(url) {
+    const a = document.createElement("a");
+    a.href = url;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  }
+</script>
+
+<button onclick="download('localhost:3000/download-pdf')">Download</button>
